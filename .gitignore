@@ -105,3 +105,6 @@ venv.bak/
 
 #tokens
 /auth.json
+
+#Rob's reference files
+*.pdf
