@@ -18,10 +18,14 @@ def main():
         input("Send tweet: Y\nGenerate new: N\nQuit: Any other key\n")).upper()
     if adminRes == "Y":
         api.PostUpdate(tweetCandidate)
+        print("\nTweet sent! View it at https://twitter.com/gossip_robot_x\n")
         return False
     elif adminRes == "N":
+        print("\nSourcing new gossip...\n")
         return True
+
     else:
+        print("Shutting down...")
         return False
 
 
